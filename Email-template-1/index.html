@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Josefin+Sans:ital,wght@0,700;1,400&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <title>Codes-Battle</title>
+
+    <style>
+        :root {
+            --main-color: #fbcfb6;
+            --secondary-color: #f64d12;
+            --main-font: 'Russo One', sans-serif;
+            --secondary-font: 'Eagle Lake', cursive;
+            --third-font: 'Josefin Sans', sans-serif;
+        }
+
+        body {
+            background: #f6f6f6;
+            overflow-x: hidden;
+        }
+
+        .wrapper {
+            width: 100%;
+            background: #f6f6f6;
+            table-layout: fixed;
+            padding-bottom: 60px;
+        }
+
+        .main {
+            width: 100%;
+            max-width: 600px;
+            border-spacing: 0;
+            margin: 0 auto;
+            background: #fff;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .header {
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+            background: var(--main-color);
+            padding-bottom: 20px;
+        }
+
+        .navigation {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* .navigation table {
+            width: 100%;
+            max-width: 280px;
+        } */
+
+        .social .nav {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .nav li a {
+            margin: 0 10px;
+            font-size: 20px;
+            color: var(--secondary-color);
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+
+        .typed-cursor {
+            display: none;
+            opacity: 0;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .pros {
+            width: 48%;
+            text-align: center;
+        }
+
+        .pros svg {
+            font-size: 35px;
+        }
+
+        .pros p {
+            font-family: var(--third-font);
+            font-size: 16px;
+        }
+
+        .pros h4 {
+            background: var(--clr);
+            width: fit-content;
+            margin: auto;
+            padding: 10px;
+            border-radius: 50%;
+            color: #fff
+        }
+
+        .pros h3 {
+            font-family: var(--main-font);
+            font-weight: 400;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 150px;
+            padding-top: 30px;
+            text-align: center;
+
+        }
+
+        .contact {
+            background: var(--main-color);
+            clip-path: polygon(0 40%, 100% 0, 100% 100%, 0% 100%);
+        }
+
+        @media screen and (min-width:50px) and (max-width:450px) {
+
+            h1,
+            h2,
+            h3 {
+                font-size: 18px !important;
+            }
+
+            p {
+                font-size: 16px !important;
+            }
+
+            .pros {
+                width: 80% !important;
+                text-align: center;
+            }
+        }
+
+        .con {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <center class="wrapper">
+        <table class="main">
+            <tr>
+                <td class="header">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td class="navigation">
+                                <table class="logo">
+                                    <tr>
+                                        <td><img src="./img/logo.png" alt=""></td>
+                                    </tr>
+                                </table>
+                                <table class="social">
+                                    <tr>
+                                        <td>
+                                            <ul class="nav">
+                                                <li><a href="#"><img style="height:25px ;" src="./img/facebook.png"
+                                                            alt=""></a></li>
+                                                <li><a href="#"><img style="height:25px ;" src="./img/linkedin.png"
+                                                            alt=""></a></li>
+                                                <li><a href="#"><img style="height:25px ;" src="./img/youtube.png"
+                                                            alt=""></a></li>
+
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="landing">
+                                <table>
+                                    <tr>
+                                        <td class="hero">
+                                            <table class="content" style="width:100%;">
+                                                <tr>
+                                                    <td class="con">
+                                                        <div class="content" style="width: 60% ;">
+                                                            <h2
+                                                                style="display: flex; align-items:end;width:100% ;font-size:1.5rem;font-family:var(--main-font)">
+                                                                Do You
+                                                                Want TO <i class="fa-solid fa-arrow-turn-down"
+                                                                    style="color:var(--secondary-color) ;margin-left: 10px;"></i>
+                                                            </h2>
+                                                            <h3 style="margin: 0;width:100%;height:40px ;font-family:var(--third-font)"
+                                                                class="writing"></h3>
+                                                        </div>
+                                                        <img style="width:37%;" src="./img/fly.png" alt="">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table class="pic" style="width:70%;">
+                                                <tr>
+                                                    <td>
+                                                        <p
+                                                            style="font-family: var(--third-font); margin-top:0;margin-bottom: 50px;font-weight: bold;">
+                                                            You are exactly in the right place. We will help you
+                                                            create your brand in the following ways. Create your own
+                                                            website. Create a web store to sell your products and
+                                                            create an email template to communicate with your
+                                                            customers.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- ######################## Why Us #################################### -->
+            <tr>
+                <td class="why-us">
+                    <table>
+                        <tr>
+                            <td>
+                                <div style="margin: auto; text-align:center">
+                                    <h2
+                                        style="font-family:var(--main-font);font-size:1.1rem;margin :auto;text-align:center ;display: inline-block;">
+                                        our <span style="color:#f64d12">features . . .</span>
+                                    </h2>
+                                    <img style="vertical-align: bottom;" width="50px" src="./img/avatar.gif" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="features">
+                                <table class="pros">
+                                    <tr>
+                                        <td>
+                                            <div>
+                                                <img style="width:60px;" src="./img/award.gif" alt="">
+                                            </div>
+                                            <!-- <h4 style="--clr:#f06f5d">
+                                                <i class=" fa-solid fa-crosshairs"></i>
+                                            </h4> -->
+
+                                            <h3 style="text-transform: uppercase;">
+                                                High <span style="color:var(--secondary-color)">Quality</span>
+                                            </h3>
+                                            <p>Get your Websites with excellent quality and professional look</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="pros">
+                                    <tr>
+                                        <td>
+
+                                            <div>
+                                                <img style="width:60px;" src="./img/clock.gif" alt="">
+                                            </div>
+                                            <h3 style=" text-transform: uppercase;">
+                                                Short <span style="color:var(--secondary-color)">time</span>
+                                            </h3>
+                                            <p>We get what you need done in the shortest possible time</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="pros">
+                                    <tr>
+                                        <td>
+                                            <div>
+                                                <img style="width:60px;" src="./img/money-bag.gif" alt="">
+                                            </div>
+
+
+                                            <h3 style="text-transform: uppercase;">
+                                                Low <span style="color:var(--secondary-color)">Prices</span>
+                                            </h3>
+                                            <p>Our service prices are discounted for customer satisfaction</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="pros">
+                                    <tr>
+                                        <td>
+                                            <div>
+                                                <img style="width:60px;" src="./img/sup.gif" alt="">
+                                            </div>
+
+
+                                            <h3 style="text-transform: uppercase;">
+                                                24 hour <span style="color:var(--secondary-color)">Support</span>
+                                            </h3>
+                                            <p>We are available to provide technical support 24 hours a day
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- ######################## Why Us #################################### -->
+
+
+            <!-- ######################## Services  #################################### -->
+            <tr>
+                <td class="why-us">
+                    <table>
+                        <tr>
+                            <td>
+                                <div style="margin: auto; text-align:center">
+                                    <h2
+                                        style="font-family:var(--main-font);font-size:1.1rem;margin :auto;text-align:center;display: inline-block">
+                                        our <span style="color:#f64d12">Services . . .</span></h2>
+                                    <img style="vertical-align: middle;" width="50px" src="./img/layers.gif" alt="">
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="features">
+                                <table class="pros">
+                                    <tr>
+                                        <td>
+                                            <div>
+                                                <img style="width:60px;" src="./img/browser.gif" alt="">
+                                            </div>
+                                            <!-- <h4 style="--clr:#f06f5d">
+                                                <i class=" fa-solid fa-crosshairs"></i>
+                                            </h4> -->
+
+                                            <h3 style="text-transform: uppercase;">
+                                                create <span style="color:var(--secondary-color)">Websites</span>
+                                            </h3>
+                                            <p>Create websites for various fields using different technologies and
+                                                global platforms</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="pros">
+                                    <tr>
+                                        <td>
+                                            <!-- <h4 style="--clr:#1bcd8b">
+                                                <i class="fa-regular fa-clock"></i>
+                                            </h4> -->
+                                            <div>
+                                                <img style="width:60px;" src="./img/shopping-cart.gif" alt="">
+                                            </div>
+                                            <h3 style=" text-transform: uppercase;">
+                                                Create <span style="color:var(--secondary-color)">WebStores</span>
+                                            </h3>
+                                            <p>Establishment of multi-vendor webstores to sell various goods and various
+                                                services</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="pros">
+                                    <tr>
+                                        <td>
+                                            <div>
+                                                <img style="width:60px;" src="./img/options.gif" alt="">
+                                            </div>
+                                            <!-- <h4 style="--clr:#3d94e5">
+                                                <i class=" fa-solid fa-hand-holding-dollar"></i>
+                                            </h4> -->
+
+                                            <h3 style="text-transform: uppercase;">
+                                                Edit <span style="color:var(--secondary-color)">Websites</span>
+                                            </h3>
+                                            <p>Add some features to ready-made websites to become more attractive and
+                                                effective</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <table class="pros">
+                                    <tr>
+                                        <td>
+                                            <div>
+                                                <img style="width:60px;" src="./img/folder.gif" alt="">
+                                            </div>
+                                            <!-- <h4 style="--clr:#3d94e5">
+                                                <i class=" fa-solid fa-hand-holding-dollar"></i>
+                                            </h4> -->
+
+                                            <h3 style="text-transform: uppercase;">
+                                                Build <span style="color:var(--secondary-color)">Themes</span>
+                                            </h3>
+                                            <p>Using programming languages to build themes and create one-page websites
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- ######################## Services  #################################### -->
+
+
+            <!-- ######################## Contact  #################################### -->
+            <tr>
+                <td class="contact">
+                    <table style="width: 100%">
+                        <tr>
+                            <td class="footer">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <h3 style="font-family: var(--main-font)">
+                                                contact us . . .
+                                            </h3>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <table class="social">
+                                    <tr>
+                                        <td>
+                                            <ul class="nav" style="padding: 0;">
+                                                <li><a href="#"><img style="height:25px ;" src="./img/facebook.png"
+                                                            alt=""></a></li>
+                                                <li><a href="#"><img style="height:25px ;" src="./img/linkedin.png"
+                                                            alt=""></a></li>
+                                                <li><a href="#"><img style="height:25px ;" src="./img/twitter.png"
+                                                            alt=""></a></li>
+                                                <li><a href="#"><img style="height:25px ;" src="./img/instagram.png"
+                                                            alt=""></a></li>
+                                                <li><a href="#"><img style="height:25px ;" src="./img/youtube.png"
+                                                            alt=""></a></li>
+
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- ######################## Contact  #################################### -->
+
+
+
+        </table>
+    </center>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var typed = new Typed('.writing', {
+            strings: [
+                'create your own brand ?',
+                'Increase your customers',
+                'Increase your income',
+            ],
+            typeSpeed: 50,
+            backSpeed: 60,
+            loop: true,
+            smartBackspace: true
+
+        });
+    </script>
+</body>
+
+</html>
